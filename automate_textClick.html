@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Space replace tool for sentences click :-</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<input id="demo"/>
+<p id="output">Text will appear here</p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("demo").value;
+    //var txt = str.replace(/ /g,"&nbsp;");
+	var txt = str.replace(/ /g,"&#38;&#110;&#98;&#115;&#112;&#59;");
+    document.getElementById("output").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
